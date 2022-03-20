@@ -1,0 +1,15 @@
+# Anime/Manga related stuff
+- What are the most popular Anime between yyyy-yyyy?
+- What are the most popular Anime by genre?
+- What are the most popular/unpopular characters?
+- Which opening theme is the most used one?
+- Which studio produced the most anime?
+- Which age rating is the most common?
+- Longest Anime by duration?
+- Most used episode duration? (in minutes)
+(Same with Manga)
+
+# User related stuff
+- Average user watch time
+- Average completed shows
+- When did the most users join?
