@@ -2,3 +2,6 @@ import pandas as pd
 import matplotlib as matplotlib
 
 anime_data = pd.read_csv('data/anime_cleaned.csv', na_values=r'\N')
+
+top_anime = anime_data.sort_values(by="rank" ascending=True)
+print(top_anime)
