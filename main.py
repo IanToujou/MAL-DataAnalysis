@@ -37,3 +37,7 @@ gender_data = [male_count, female_count]
 plt.pie(gender_data, labels=genders)
 plt.show()
 
+top_watchers = user_data.sort_values(by="user_days_spent_watching", ascending=False)
+top_watchers_cleaned = top_watchers.head(10)
+top_watchers_cleaned.plot(x="username", y="user_days_spent_watching", kind="bar", rot=30, fontsize=12, color="blue")
+plt.show()
