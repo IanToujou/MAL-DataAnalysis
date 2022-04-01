@@ -8,6 +8,13 @@ dpi = 82
 # Get the data frm the CSV files.
 anime_data = pd.read_csv("data/anime_cleaned.csv", na_values=r'\N')
 user_data = pd.read_csv("data/users_cleaned.csv", na_values=r'\N')
+waifu_data = pd.read_csv("data/waifus_cleaned.csv", na_values=r'\N')
+
+# Biggest booba size
+top_waifus = waifu_data.sort_values(by="bust", ascending=False)
+top_waifus = top_waifus[top_waifus.bust < 1000].head(10)
+top_waifus.plot(x="name", y="bust", kind="bar", rot=30, fontsize=12, color="blue")
+plt.show()
 
 # What are the top 10 anime sorted by member count?
 top_anime = anime_data.sort_values(by="members", ascending=False)
